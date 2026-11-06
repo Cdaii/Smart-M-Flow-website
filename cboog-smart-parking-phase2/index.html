@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101713"><meta name="description" content="Cboog M-Smart Flow and Eco-Rewards smart parking experience">
+  <title>Cboog | M-Smart Flow & Eco-Rewards</title><link rel="icon" href="assets/cboog-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="modal-root"></div>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><img src="assets/cboog-logo.png" alt="Cboog logo"><div><b>CBOOG</b><small>SMART PARKING</small></div></div>
+      <div class="workspace-label">WORKSPACE</div>
+      <nav id="primary-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-view="customer-overview"><span class="nav-icon">◫</span><span>Customer app</span><span class="nav-tag">APP</span></button>
+        <div class="nav-divider"></div><div class="workspace-label">MANAGEMENT</div>
+        <button class="nav-item" data-view="dashboard"><span class="nav-icon">▦</span><span>Dashboard</span></button>
+        <button class="nav-item" data-view="live-parking"><span class="nav-icon">▤</span><span>Live parking</span><span class="live-dot"></span></button>
+        <button class="nav-item" data-view="ai-monitoring"><span class="nav-icon">◎</span><span>AI monitoring</span></button>
+        <button class="nav-item" data-view="zones"><span class="nav-icon">⌗</span><span>Parking zones</span></button>
+        <button class="nav-item" data-view="traffic"><span class="nav-icon">⇄</span><span>Exit traffic</span></button>
+        <button class="nav-item" data-view="promotions"><span class="nav-icon">◇</span><span>Promotions</span></button>
+        <button class="nav-item" data-view="eco"><span class="nav-icon">♧</span><span>Eco-Rewards</span></button>
+        <div class="nav-divider"></div><div class="workspace-label">ADMINISTRATION</div>
+        <button class="nav-item" data-view="users"><span class="nav-icon">♙</span><span>Users</span></button>
+        <button class="nav-item" data-view="reports"><span class="nav-icon">▥</span><span>Reports</span></button>
+        <button class="nav-item" data-view="settings"><span class="nav-icon">⚙</span><span>Settings</span></button>
+      </nav>
+      <div class="sidebar-bottom"><div class="mall-chip"><span class="status-pulse"></span><div><b>Demo environment</b><small>Local preview · sample data</small></div></div><div class="admin-mini"><div class="avatar">CB</div><div><b>Admin User</b><small>Administrator</small></div><button class="icon-btn" aria-label="Account options" id="account-menu">···</button></div></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><button class="mobile-menu icon-btn" id="mobile-menu" aria-label="Toggle navigation">☰</button><div class="crumb"><span>CBOOG</span><i>/</i><b id="page-crumb">Customer app</b></div><div class="top-actions"><div class="system-pill"><span class="status-pulse"></span> ALL SYSTEMS NORMAL</div><button class="icon-btn notification-btn" id="notifications" aria-label="Notifications">♧<span></span></button><div class="top-avatar">CB</div></div></header>
+      <section id="view-root" class="view-root" tabindex="-1"></section>
+      <footer class="app-footer"><span>© 2026 CBOOG · M-SMART FLOW & ECO-REWARDS</span><span>FRONTEND PREVIEW <b>·</b> SAMPLE DATA</span></footer>
+    </main>
+  </div>
+  <script src="app.js" defer></script>
+</body></html>
